@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Mini Kalendar</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+    <div class="kalendar">
+        <div class="kalendar1">
+            <div class="levo">
+                <p id="datum">01</p>
+                <p id="dan">Nedelja</p>
+            </div>
+            <div class="desno">
+                <p id="mesec">Januar</p>
+                <p id="godina">2024</p>
+            </div>
+        </div>
+    </div>
+    <script>
+const datum=document.getElementById("datum");
+const dan=document.getElementById("dan");
+const mesec=document.getElementById("mesec");
+const godina=document.getElementById("godina");
+const danas=new Date();
+const weekDays=["Nedelja","Ponedeljak","Utorak","Sreda","Četvrtak","Petak","Subota"];
+console.log(danas);
+const allMonths=["Januar","Februar","Mart","April","Maj","Jun","Avgust","Septembar","Oktobar","Novembar","Decembar"];
+datum.innerHTML=(danas.getDate()<10?"0":"")+danas.getDate();
+dan.innerHTML=weekDays[danas.getDay()];
+mesec.innerHTML=allMonths[danas.getMonth()];
+godina.innerHTML=danas.getFullYear();
+
+    </script>
+</body>
+</html>

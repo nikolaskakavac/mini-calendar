@@ -1,0 +1,46 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+.kalendar{
+    width:100%;
+    min-height:100vh;
+    background:orange;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.kalendar1{
+    width:400px;
+    height: 250px;
+    background:#fff;
+    display:flex;
+    align-items:center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px;
+}
+.levo,.desno{
+    width:50%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column;
+    font-size:27px;
+}
+.desno{
+    width:42%;
+    background: rgb(15, 2, 252);
+    color:#fff;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.levo{
+    width:58%;
+}
+#datum{
+    font-size:100px;
+    line-height:90px;
+}
